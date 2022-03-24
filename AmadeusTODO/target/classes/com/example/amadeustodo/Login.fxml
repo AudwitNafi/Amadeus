@@ -31,11 +31,6 @@
          <children>
             <PasswordField fx:id="passwordTextField" layoutX="101.0" layoutY="185.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: #59FFFF; -fx-border-width: 0px 0px 2px;" />
             <TextField fx:id="userNameTextField" layoutX="101.0" layoutY="135.0" promptText="Enter Username" style="-fx-background-color: transparent; -fx-border-color: #59FFFF; -fx-border-width: 0px 0px 2px;" />
-            <Label layoutX="107.0" layoutY="67.0" text="User Login" textFill="WHITE">
-               <font>
-                  <Font name="Tempus Sans ITC" size="22.0" />
-               </font>
-            </Label>
             <Button fx:id="loginButton" layoutX="123.0" layoutY="241.0" mnemonicParsing="false" onAction="#loginButtonPressed" prefHeight="25.0" prefWidth="105.0" stylesheets="@buttonHover.css" text="Login">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -60,15 +55,24 @@
                   <Font name="Bernard MT Condensed" size="12.0" />
                </font>
             </Label>
-            <Button fx:id="signUpButton" layoutX="202.0" layoutY="338.0" mnemonicParsing="false" onAction="#signUpButtonPressed" stylesheets="@buttonHover.css" text="Sign Up">
+            <Button fx:id="signUpButton" layoutX="202.0" layoutY="338.0" mnemonicParsing="false" onAction="#signUpButtonPressed" prefHeight="25.0" prefWidth="67.0" stylesheets="@buttonHover.css" text="Sign Up">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="closeButton" layoutX="284.0" layoutY="-8.0" mnemonicParsing="false" onAction="#closeButtonPressed" prefHeight="25.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+            <Button fx:id="closeButton" layoutX="280.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeButtonPressed" prefHeight="25.0" prefWidth="24.0" stylesheets="@buttonHover.css" text="X">
                <font>
-                  <Font name="Consolas" size="21.0" />
-               </font></Button>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="118.0" layoutY="77.0" prefHeight="34.0" prefWidth="112.0" text="User Login" textFill="#04fff2">
+               <font>
+                  <Font name="Tempus Sans ITC" size="24.0" />
+               </font>
+            </Label>
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />

@@ -1,22 +1,26 @@
 package com.example.amadeustodo;
 
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class DashboardController {
+public class NotificationsController {
+
     @FXML
     private Button addButton;
 
     @FXML
     private Button closeButton;
+
+    @FXML
+    private Label helloLabel;
 
     @FXML
     private Button notesButton;
@@ -25,16 +29,10 @@ public class DashboardController {
     private Button notificationsButton;
 
     @FXML
-    private Button personalButton;
+    private Button taskButton;
 
     @FXML
-    private Button workButton;
-
-    @FXML
-    void addButtonsPressed(ActionEvent event) throws IOException {
-//        Parent root = FXMLLoader.load(getClass().getResource("AddNew.fxml"));
-//        Stage stage = (Stage)addButton.getScene().getWindow();
-//        stage.setScene(new Scene(root));
+    void addButtonsPressed(ActionEvent event) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("AddNew.fxml"));
         Parent root;
         try{
@@ -58,11 +56,6 @@ public class DashboardController {
     }
 
     @FXML
-    void taskButtonPressed(ActionEvent event) {
-
-    }
-
-    @FXML
     void notesButtonPressed(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Notes.fxml"));
         Stage stage = (Stage)notesButton.getScene().getWindow();
@@ -70,23 +63,15 @@ public class DashboardController {
     }
 
     @FXML
-    void notificationsButtonsPressed(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Notifications.fxml"));
-        Stage stage = (Stage)notificationsButton.getScene().getWindow();
-        stage.setScene(new Scene(root));
+    void notificationsButtonsPressed(ActionEvent event) {
+
     }
 
     @FXML
-    void personalButtonPressed(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Personal.fxml"));
-        Stage stage = (Stage)personalButton.getScene().getWindow();
+    void taskButtonPressed(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        Stage stage = (Stage)taskButton.getScene().getWindow();
         stage.setScene(new Scene(root));
     }
 
-    @FXML
-    void workButtonPressed(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Work.fxml"));
-        Stage stage = (Stage)workButton.getScene().getWindow();
-        stage.setScene(new Scene(root));
-    }
 }

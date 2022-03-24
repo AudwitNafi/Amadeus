@@ -36,7 +36,7 @@ public class LoginController {
     @FXML
     void closeButtonPressed(ActionEvent event) {
         closeButton.setOnAction((ActionEvent e)->{
-            Platform.exit();
+            System.exit(0);
         });
     }
 

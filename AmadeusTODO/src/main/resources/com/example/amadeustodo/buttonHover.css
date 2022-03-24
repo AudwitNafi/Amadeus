@@ -27,7 +27,7 @@
 }
 
 .notificationsButton{
-    transition-duration: 0.4s;
+    transition-duration: 1s;
 
     /*-fx-color: white;*/
     /*-fx-background-color: transparent;*/
@@ -38,4 +38,7 @@
 }
 .body {
     -fx-background-image: url('icons/Background.jpg');
+}
+.newBackground {
+    -fx-background-image: url('icons/background2.jpg');
 }

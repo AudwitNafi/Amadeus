@@ -11,12 +11,12 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="body" stylesheets="@buttonHover.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.amadeustodo.DashboardController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="body" stylesheets="@buttonHover.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.amadeustodo.NotesController">
    <center>
       <AnchorPane prefHeight="400.0" prefWidth="439.0" BorderPane.alignment="CENTER">
          <children>
             <Separator layoutX="14.0" layoutY="98.0" prefHeight="3.0" prefWidth="368.0" />
-            <Label layoutX="28.0" layoutY="65.0" prefHeight="34.0" prefWidth="107.0" text="TASKS" textFill="#04fff2">
+            <Label layoutX="28.0" layoutY="65.0" prefHeight="34.0" prefWidth="107.0" text="Notes" textFill="#04fff2">
                <font>
                   <Font name="Tempus Sans ITC" size="24.0" />
                </font>
@@ -26,26 +26,6 @@
                   <Font name="Ink Free" size="19.0" />
                </font>
             </Label>
-            <Button fx:id="personalButton" alignment="BOTTOM_CENTER" layoutX="82.0" layoutY="190.0" mnemonicParsing="false" onAction="#personalButtonPressed" prefHeight="70.0" prefWidth="70.0" stylesheets="@buttonHover.css" text="Personal">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="workButton" alignment="BOTTOM_CENTER" layoutX="248.0" layoutY="189.0" mnemonicParsing="false" onAction="#workButtonPressed" prefHeight="70.0" prefWidth="70.0" stylesheets="@buttonHover.css" text="Work">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <ImageView fitHeight="28.0" fitWidth="24.0" layoutX="105.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@icons/user.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="22.0" fitWidth="32.0" layoutX="272.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@icons/Work.png" />
-               </image>
-            </ImageView>
             <Button fx:id="closeButton" layoutX="410.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeButtonPressed" prefHeight="25.0" prefWidth="24.0" text="X">
                <font>
                   <Font name="System Bold" size="12.0" />
