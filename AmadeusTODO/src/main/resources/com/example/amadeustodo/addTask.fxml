@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
@@ -53,12 +52,9 @@
                   <Font name="Ink Free" size="15.0" />
                </font></Label>
             <DatePicker fx:id="Deadline" layoutX="148.0" layoutY="248.0" prefHeight="25.0" prefWidth="194.0" />
-            <ComboBox fx:id="Categories" layoutX="386.0" layoutY="248.0" prefHeight="25.0" prefWidth="183.0" promptText="Categories">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor></ComboBox>
             <Button fx:id="okButton" layoutX="394.0" layoutY="319.0" mnemonicParsing="false" onAction="#okButtonPressed" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: D1E4F9;" text="OK" />
             <Button fx:id="cancelButton" layoutX="492.0" layoutY="319.0" mnemonicParsing="false" onAction="#cancelButtonPressed" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: F2C4F6;" text="Cancel" />
+            <ChoiceBox fx:id="categoriesChoicebox" layoutX="403.0" layoutY="248.0" prefWidth="150.0" />
          </children>
       </Pane>
    </center>

@@ -7,11 +7,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class DashboardController {
+
+    @FXML
+    private Label helloLabel;
+
     @FXML
     private Button addButton;
 
@@ -88,5 +93,10 @@ public class DashboardController {
         Parent root = FXMLLoader.load(getClass().getResource("Work.fxml"));
         Stage stage = (Stage)workButton.getScene().getWindow();
         stage.setScene(new Scene(root));
+    }
+
+    public void setTextHelloLabel(String username)
+    {
+        helloLabel.setText("Hello "+username);
     }
 }

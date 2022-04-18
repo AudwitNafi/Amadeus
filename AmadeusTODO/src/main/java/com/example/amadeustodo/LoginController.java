@@ -42,9 +42,12 @@ public class LoginController {
 
     @FXML
     void loginButtonPressed(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
+        Parent root = fxmlLoader.load();
         Stage stage = (Stage)loginButton.getScene().getWindow();
         stage.setScene(new Scene(root));
+        DashboardController dashboardController = (DashboardController) fxmlLoader.getController();
+        dashboardController.setTextHelloLabel(userNameTextField.getText());
     }
 
     @FXML
@@ -53,4 +56,5 @@ public class LoginController {
         Stage stage = (Stage)signUpButton.getScene().getWindow();
         stage.setScene(new Scene(root));
     }
+
 }
